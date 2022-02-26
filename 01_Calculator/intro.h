@@ -17,6 +17,15 @@ static int get_int(void)
     return input;
 }
 
+static char get_char(void)
+{
+    char input = 0;
+
+    scanf(" %c", &input);
+
+    return input;
+}
+
 static float get_float(void)
 {
     float input = 0;

@@ -1,0 +1,42 @@
+Пишем кода си в .c файлове, които после компилираме.
+$ gcc source.c [-o program_name]
+
+.h файловете ни предоставят допълнителна функционалност,
+ползваме ги с #include
+
+Програмата ни започва да се изпълнява от първия ред на
+int main()
+
+
+Създаване (дефиниция) на променлива:
+  type variable_name;
+  type variable_name = initial_value;
+
+  Типове данни:
+    int - integer, цяло число
+      %d - format specifier for int: printf("%d", some_int)
+    float - floating point number - реално число
+      %f - format specifier for float/double
+    char - символ (%c)
+
+
+Функции:
+  Извикване:
+    function();
+  Аргумент на функция - някакви данни, които ѝ "подаваме".
+    function(argument);
+  Функцията може да има резултат - "return value".
+    result = function(argument);
+
+
+printf() - стандартна функция за извеждане на текст в терминала
+  Първо подаваме текста, заедно с формата на данните:
+    "Integer: %d, Character: %c"
+  След това поотделно всички данни, за които сме написали формат:
+    15, 'A'
+    int_variable, char_variable
+  printf("Integer: %d, Character: %c", 15, 'A');
+
+  Почти винаги завършваме с нов ред:
+    '\n' - newline character
+    printf("Hello World!\n");
