@@ -6,3 +6,9 @@ Shortcuts:
   VS Code:
     Alt + up/down: move line
     Shift + Alt + up/down: duplicate line
+
+    Terminal:
+      Right-click file in Explorer
+        > Open in Integrated Terminal (instead of cd*10)
+      Ctrl+Shift+C: copy
+      Ctrl+Shift+V: paste
