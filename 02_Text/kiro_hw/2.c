@@ -22,9 +22,10 @@ int main()
 
     while (k != EOF)
     {
-        // some code here?
-
-        putchar(k);
+        if (k != 'o')
+        {
+            putchar(k);
+        }
 
         k = getchar();
     }
