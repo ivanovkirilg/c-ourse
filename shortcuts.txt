@@ -7,6 +7,9 @@ Shortcuts:
     Alt + up/down: move line
     Shift + Alt + up/down: duplicate line
 
+    Ctrl + P: Open a file by name
+    Ctrl + E: Open a file by name
+
     Terminal:
       Right-click file in Explorer
         > Open in Integrated Terminal (instead of cd*10)

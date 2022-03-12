@@ -1,0 +1,37 @@
+Compile for debug:
+  gcc -g file.c...
+
+Run GDB:
+  gdb path/to/program
+
+GDB Commands (cheat-sheet):
+  r(un) - run the program normally, stopping only if there is a breakpoint
+  start - run the program, stopping at the beginning of main()
+  c(ontinue) - resume the program, stopping at next breakpoint
+    c(ontinue) [n] - resume from a breakpoint, skipping it the next n-1 times
+  b(reak) [file.c:]line_num - add a breakpoint
+  l(ist) - see 10 lines of code, first around the current breakpoint
+    l(ist) [file.c:]line_num - see 10 lines around this position
+  where - see the current position (function(), file.c:line_num)
+  p(rint) variable/expression - see a value
+  q(uit) - close gdb, killing the debugged program
+  k(ill) - while our program is running, kill it
+  n(ext) - when the program is paused, execute just the current line
+
+
+Buffers - stdin/stdout:
+
+   terminal (user):
+   "hello world\n"
+   at '\n' goes to
+  | stdin buffer  |
+       read by
+     [[program]]
+      writes to
+  | stdout buffer |
+      terminal
+
+  Note - This behavior is not absolute:
+    in/out don't /have/ to be buffered;
+    there are different types of buffers.
+    https://www.gnu.org/software/libc/manual/html_node/Buffering-Concepts.html
