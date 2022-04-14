@@ -13,13 +13,14 @@
 int main()
 {
     char input = getchar();
-    int sum_of_digits = 0;
+    int sum_of_digits = 0; // 48
 
-    while (input != EOF) // ctrl + d
+    while (input != EOF)
     {
-        if ((input > '0') && (input < '9'))
+        if ((input > '0') && (input <= '9'))
         {
-            sum_of_digits = sum_of_digits + input;
+            int char_to_digit = input - '0';
+            sum_of_digits = sum_of_digits + char_to_digit;
         }
 
         input = getchar();
