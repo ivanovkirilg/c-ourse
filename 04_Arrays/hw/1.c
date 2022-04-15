@@ -12,9 +12,9 @@ char uppercase(char character)
 
 int main()
 {
-    char Bye[] = "GoodBye"; // "GOodBye"
-    Bye[1] = uppercase(Bye[1]);
+    // Use the 'uppercase' function
+    // to transform the entire `message`
 
-    printf("%s\n", Bye);
+    char message[] = "GoodBye"; // "GOODBYE"
+
 }
-

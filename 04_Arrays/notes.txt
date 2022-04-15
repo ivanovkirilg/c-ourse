@@ -1,1 +1,32 @@
-Array - 
+Масив
+  Променлива, която съдържа няколко стойности (от един и същи тип)
+  type array_name[size];
+  int numbers[5];
+
+String
+  Поредица от char-ове - обикновено в масив - която завършва с '\0'
+  Терминираща нула - '\0' - char с числена стойност 0
+    (различно от символа '0', който в ASCII има стойност 48)
+  char string[] = "Some text";
+  char string[] = "Some text\0";
+  char string[256] = "Text with some extra space";
+
+For loop
+  for (init; condition; increment)
+  {
+    body();
+  }
+
+  1. Изпълнява се `init`
+  2. Проверява се `condition`
+    -> true
+      3. Изпълнява се `body()`
+      4. Изпълнява се `increment`
+         Връщаме се на 2. (condition)
+    -> false
+         Приключваме
+
+  for (int i = 0; i < 5; i++)
+  {
+    printf("%d ", i);
+  }

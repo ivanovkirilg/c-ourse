@@ -19,7 +19,7 @@ int main()
         index++;
     }
 
-    for (index = 0; index < ARRAY_SIZE; index++) 
+    for (index = 0; index < ARRAY_SIZE; index++)
     {
         printf("array[%d] == %d\n", index, squares[index]);
     }
